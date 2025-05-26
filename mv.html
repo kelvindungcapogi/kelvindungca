@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission & Vision</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      display: flex;
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      width: 220px;
+      min-height: 100vh;
+      background-color: #2980b9;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+      box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 20px;
+      margin: 5px 0;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    /* Main container beside nav */
+    .container {
+      margin-left: 240px;
+      max-width: 800px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: #2980b9;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+      }
+
+      nav a {
+        padding: 10px 12px;
+        margin: 5px;
+        font-size: 0.9em;
+      }
+
+      .container {
+        margin: 20px;
+        margin-top: 0;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body background="pccc/wallpaperbackground.jpg">
+
+  <!-- Sidebar Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <div class="container">
+    <div class="mission">
+      <div class="title">✅ Mission Statement</div>
+      <h1>
+        "To provide stylish, high-quality, and affordable footwear that supports every step of our customers' lives — 
+        combining comfort, innovation, and confidence for all walks of life."
+      </h1>
+    </div>
+
+    <div class="vision">
+      <div class="title">✅ Vision Statement</div>
+      <h1>
+        "To become the most trusted and loved shoe destination — known for setting trends, championing sustainability, 
+        and delivering unmatched customer experience across every generation."
+      </h1>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShoeMore - Ultimate Shoe Destination</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("pccc/wallpaperbackground.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+    }
+
+    nav {
+      width: 220px;
+      background-color: rgba(41, 128, 185, 0.95);
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #f1c40f;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+    }
+
+    .menu-item span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .add-btn {
+      padding: 10px 16px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-btn:hover {
+      background-color: #1f5f8b;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .menu-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>ShoeMore</h1>
+      <p>Your Ultimate Shoe Destination</p>
+    </header>
+
+    <div class="menu">
+      <div class="menu-item">
+        <img src="pccc/J4.jpeg" alt="Jordan 4">
+        <h3>Jordan 4</h3>
+        <span>₱5000</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pccc/airmaxx.jpeg" alt="Nike Air Max">
+        <h3>Nike Air Max</h3>
+        <span>₱4500</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pccc/ultraboost.jpg" alt="UltraBoost">
+        <h3>Adidas UltraBoost</h3>
+        <span>₱2500</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pccc/travis.jfif" alt="Travis Scott">
+        <h3>Travis Scott</h3>
+        <span>₱20000</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pccc/lebronseries.jfif" alt="Lebron">
+        <h3>Nike Lebron</h3>
+        <span>₱8500</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pccc/sc.png" alt="Curry">
+        <h3>Underarmour Curry 10</h3>
+        <span>₱9000</span>
+        <button class="add-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

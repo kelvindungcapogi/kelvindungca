@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Reviews – ShoeMore</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("pccc/wallpaperbackground.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+    }
+
+    nav {
+      width: 220px;
+      background-color: rgba(41, 128, 185, 0.95);
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    .reviews-section {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .reviews-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f1c40f;
+    }
+
+    .review {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+      gap: 20px;
+      background-color: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .review img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .review-content h3 {
+      margin: 0;
+      color: #ecf0f1;
+      font-size: 1.2rem;
+    }
+
+    .review-content p {
+      margin-top: 8px;
+      color: #ddd;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .review img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <div class="content">
+    <div class="reviews-section">
+      <h2>Customer Reviews</h2>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Samantha Reyes">
+        <div class="review-content">
+          <h3>Samantha Reyes</h3>
+          <p>"Absolutely love the quality of shoes I received. Super comfy and stylish! Customer service was top-notch too."</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Jerome Tan">
+        <div class="review-content">
+          <h3>Jerome Tan</h3>
+          <p>"Fast delivery and the shoes looked exactly like the pictures. I’ll definitely be ordering again."</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Althea Gomez">
+        <div class="review-content">
+          <h3>Althea Gomez</h3>
+          <p>"I’m impressed by the durability of the shoes. It’s hard to find comfort and fashion in one – but ShoeMore delivers."</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Daniel Cruz">
+        <div class="review-content">
+          <h3>Daniel Cruz</h3>
+          <p>"Great service, great product. Got my sneakers within 3 days. Can’t wait to try another pair!"</p>
+        </div>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Clarisse Dela Peña">
+        <div class="review-content">
+          <h3>Clarisse Dela Peña</h3>
+          <p>"The best online shoe store I’ve tried so far. Clean interface, secure checkout, and wonderful staff!"</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

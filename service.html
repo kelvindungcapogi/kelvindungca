@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShoeMore - Shoe Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      background-image: url("pccc/backphoto.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2980b9;
+      padding: 20px 10px;
+      min-height: 100vh;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .sidebar a:hover,
+    .sidebar a:focus {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto 40px 260px; /* leave space for sidebar */
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #666;
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+
+    h2 {
+      color: #2980b9;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 8px;
+      margin-top: 40px;
+    }
+
+    .service {
+      margin: 20px 0;
+    }
+
+    .service-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .service-description {
+      margin-top: 5px;
+      color: #555;
+      padding-left: 15px;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        min-height: auto;
+      }
+
+      .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .sidebar a {
+        padding: 10px;
+        white-space: nowrap;
+      }
+
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="news.html">News</a>
+      <a href="service.html">Service</a>
+      <a href="web.html">Web Designer</a>
+      <a href="mv.html">Mission And Vision</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Shoe Sales Service Description</h1>
+      <p>
+        At <strong>ShoeMore - Shoe Shop</strong>, we specialize in providing a curated selection of high-quality footwear for men, women, and children.
+        Whether you're looking for everyday comfort, performance shoes, or the latest fashion trends, our expert staff is here to help you find the perfect fit.
+      </p>
+    </header>
+
+    <section>
+      <h2>What We Offer</h2>
+
+      <div class="service">
+        <div class="service-title">Wide Product Range</div>
+        <div class="service-description">From sneakers and sandals to boots and formal shoes, we stock leading brands and unique designs for every occasion.</div>
+      </div>
+
+      <div class="service">
+        <div class="service-title">Personalized Fitting Assistance</div>
+        <div class="service-description">Our trained team provides one-on-one fitting guidance to ensure comfort, support, and style tailored to your needs.</div>
+      </div>
+
+      <div class="service">
+        <div class="service-title">Exclusive Collections</div>
+        <div class="service-description">Enjoy access to limited-edition releases and exclusive designs you won’t find anywhere else.</div>
+      </div>
+
+      <div class="service">
+        <div class="service-title">Online Shopping</div>
+        <div class="service-description">Browse and purchase your favorite shoes from the comfort of your home with easy checkout and fast delivery.</div>
+      </div>
+
+      <div class="service">
+        <div class="service-title">In-Store Experience</div>
+        <div class="service-description">Visit our store for a hands-on experience, try on shoes, and get style recommendations in a welcoming environment.</div>
+      </div>
+
+      <div class="service">
+        <div class="service-title">After-Sales Support</div>
+        <div class="service-description">We offer hassle-free exchanges, returns, and a satisfaction guarantee to ensure your shopping experience is worry-free.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

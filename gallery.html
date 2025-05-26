@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoe Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("pccc/wallpaperbackground.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      min-height: 100vh;
+      color: white;
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      width: 220px;
+      background-color: transparent;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    /* Main content area */
+    .main {
+      margin-left: 220px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 50px 20px 70px;
+      text-align: center;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.8em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caption {
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1em;
+      color: #2980b9;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+
+      nav a {
+        padding: 10px;
+        font-size: 0.95em;
+        text-align: center;
+      }
+
+      .gallery {
+        padding: 20px 10px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>Shoe Gallery</h1>
+      <p>Step into style — Explore our exclusive collection</p>
+    </header>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="pccc/airmaxx.jpeg" alt="Nike Air Max" />
+        <div class="caption">Nike Air Max</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/J4.jpeg" alt="Air Jordan 4" />
+        <div class="caption">Air Jordan 4</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/lebronseries.jfif" alt="LeBron Series" />
+        <div class="caption">LeBron Series</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/Travis Scott x Nike.jfif" alt="Travis Scott x Nike" />
+        <div class="caption">Travis Scott x Nike</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/ultraboost.jpg" alt="Adidas Ultraboost" />
+        <div class="caption">Adidas Ultraboost</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/sc.png" alt="Curry Flow" />
+        <div class="caption">Curry Flow</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/kobe.jpeg" alt="Kobe Bryant Series" />
+        <div class="caption">Kobe Bryant Series</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pccc/jajaja.jpeg" alt="Janoski" />
+        <div class="caption">Janoski</div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 ShoeBrand | Designed by Your Name
+    </footer>
+  </div>
+
+</body>
+</html>

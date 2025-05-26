@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoe Store News</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url("pccc/backphoto.jpg") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    nav {
+      width: 220px;
+      background-color: #2980b9;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1f5f8b;
+      color: #f1c40f;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 220px;
+      padding: 30px 20px;
+      flex: 1;
+    }
+
+    .news-section {
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-section h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .news-item {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-title {
+      font-size: 20px;
+      color: #2980b9;
+      margin-bottom: 10px;
+    }
+
+    .news-date {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .news-content {
+      color: #333;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        padding: 10px 12px;
+        text-align: center;
+        font-size: 0.95em;
+      }
+
+      .main {
+        margin-left: 0;
+        padding: 20px 15px;
+      }
+
+      .news-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="main">
+    <div class="news-section">
+      <h2>Latest News & Updates</h2>
+
+      <div class="news-item">
+        <div class="news-title">🆕 Summer Sneaker Collection Now Available!</div>
+        <div class="news-date">Posted on May 15, 2025</div>
+        <div class="news-content">
+          Step into summer with our newest line of breathable, lightweight sneakers — perfect for travel, fitness, and everyday wear. Shop in-store or online!
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-title">🎉 Grand Opening of Our Second Branch!</div>
+        <div class="news-date">Posted on April 30, 2025</div>
+        <div class="news-content">
+          We’re excited to announce the grand opening of our new branch at Central Mall! Enjoy exclusive discounts and free gifts with every purchase during the launch week.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-title">📦 New Brands Added to Our Catalog</div>
+        <div class="news-date">Posted on April 10, 2025</div>
+        <div class="news-content">
+          We've partnered with premium brands like Adidas Originals, Skechers, and Timberland. Visit us to explore these fresh additions!
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

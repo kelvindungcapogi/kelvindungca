@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – ShoeMore</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("pccc/wallpaperbackground.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      min-height: 100vh;
+      color: white;
+    }
+
+    nav {
+      width: 220px;
+      background-color: rgba(0, 0, 0, 0.85);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 30px 15px;
+      overflow-y: auto;
+    }
+
+    nav a {
+      display: block;
+      color: #eee;
+      text-decoration: none;
+      margin-bottom: 12px;
+      padding: 12px 15px;
+      background-color: #222;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .container {
+      margin-left: 240px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .about-us {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-us h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .about-us h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #3498db;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .about-us p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .about-us em {
+      font-style: italic;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      nav a {
+        margin: 6px;
+        width: 100px;
+        text-align: center;
+      }
+
+      .container {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-us {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="service.html">Service</a>
+    <a href="web.html">Web Designer</a>
+    <a href="mv.html">Mission And Vision</a>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <header>
+      <h1>About ShoeMore</h1>
+    </header>
+
+    <section class="about-us">
+      <h2>Who We Are</h2>
+      <p>At <strong>ShoeMore</strong>, we believe that a great pair of shoes can take you anywhere. Founded with a passion for quality and comfort, our store offers a carefully curated selection of footwear that blends timeless design with everyday wearability.</p>
+      
+      <p>Whether you're looking for stylish sneakers, classic leather shoes, or something in between, our team is here to help you find the perfect fit. We partner with trusted brands and independent makers to bring you shoes that stand out—for all the right reasons.</p>
+      
+      <p>From our local shop to our online store, we’re committed to providing exceptional customer service, quick delivery, and a seamless shopping experience. Thank you for choosing us to walk with you on your journey.</p>
+
+      <p><em>Your feet deserve the best. Let us help you put your best foot forward.</em></p>
+    </section>
+  </div>
+
+</body>
+</html>
