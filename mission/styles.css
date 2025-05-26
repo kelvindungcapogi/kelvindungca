@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('img/backgroundd.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000000; /* Set global font color to black */
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  color: #000000; /* Black header text */
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(255 255 255 / 0.7); /* subtle light shadow for readability */
+}
+
+header p {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #000000;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000; /* black nav links */
+  font-weight: 600;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #7a5c3d;
+  color: #fff8f0;
+  outline: none;
+  box-shadow: 0 0 8px #7a5c3d;
+}
+
+/* Overlay section */
+.overlay {
+  padding: 40px 0;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 248, 238, 0.95); /* creamy white */
+  color: #000000; /* container font color black */
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(74, 60, 49, 0.3);
+}
+
+/* Section headings */
+h2, h3 {
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  color: #000000; /* black headings */
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #7a5c3d;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* ensure paragraphs black */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: rgba(122, 92, 61, 0.9);
+  color: #fff8f0;
+  font-size: 0.9rem;
+  border-radius: 0 0 15px 15px;
+  margin-top: 40px;
+  box-shadow: 0 -5px 15px rgba(74, 60, 49, 0.3);
+}
+/* Change About, Mission, and Vision section text color to white */
+.container section p {
+  color: rgb(0, 0, 0);
+}
+
+/* Keep bold labels like Mission and Vision in a distinct color */
+.container section p b {
+  color: #f0d9b5; /* a light cream or gold-ish color for emphasis */
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  .container {
+    padding: 20px;
+  }
+}
